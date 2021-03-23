@@ -10,16 +10,16 @@
 	</head>
 	<body>
 	
-	
+		<?php require_once('backend/process.php'); ?>
 		<div class="d-flex justify-content-center">
-		<form action="" method="POST">
+		<form action="backend/process.php" method="POST">
 		<div class="form-group mb-3">
 		<label>Name</label>
-		<input type="text" name="name" class="form-control" value="Enter your name"/>	
+		<input type="text" name="name" class="form-control" placeholder="Enter your name"/>	
 		</div>
 		<div class="form-group mb-3">
 		<label>Location</label>
-		<input type="text" name="location" class="form-control" value="Enter your name"/>
+		<input type="text" name="location" class="form-control" placeholder="Enter your name"/>
 		</div>
 		<div class="form-group">
 		<button type="submit" class="btn btn-primary" name="save">Save</button>
